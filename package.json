@@ -1,0 +1,12 @@
+{
+  "name": "organic-food",
+  "version": "1.0.0",
+  "description": "This is organic food ",
+  "main": "index.js",
+  "author": "Navid TAHERI",
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
+  
+}

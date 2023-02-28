@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  grid-template-columns: auto;
+  font-weight: 300;
+  font-family: "Oswald", sans-serif;
+  background-color: lightgrey;
+}
+
+@font-face {
+  font-family: Oswald;
+  src: url("./fonts/Oswald/Oswald-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: Oswald;
+  src: url("./fonts/Oswald/Oswald-ExtraLight.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: Oswald;
+  src: url("./fonts/Oswald/Oswald-Light.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Oswald;
+  src: url("./fonts/Oswald/Oswald-Bold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: Lato;
+  src: url("./fonts/Lato/Lato-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: Lato;
+  src: url("./fonts/Lato/Lato-Light.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Lato;
+  src: url("./fonts/Lato/Lato-Bold.ttf") format("truetype");
+  font-weight: 600;
+}
+.part1 {
+  background: url("/img/banner_image_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 50rem;
+  margin-bottom: 2rem;
+}
+
+.top-menu {
+  display: flex;
+  flex-direction: row;
+  margin-top: 4rem;
+  margin-bottom: 3px;
+}
+.top-menu-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  position: relative;
+}
+.top-menu-navbar-1 {
+  list-style-type: none;
+  position: absolute;
+  bottom: 1px;
+  left: 15rem;
+}
+.top-menu-navbar-1 a {
+  text-decoration: none;
+  color: white;
+}
+.top-menu-navbar-2 {
+  list-style-type: none;
+  text-decoration: none;
+  position: absolute;
+  bottom: 1px;
+  right: 15rem;
+}
+.top-menu-navbar-2 a {
+  text-decoration: none;
+  color: white;
+}
+
+.main-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  border-top: 1px solid white;
+}
+.main-menu p {
+  position: absolute;
+  margin-top: 1.5rem;
+  top: 0px;
+  left: 15rem;
+  color: white;
+}
+.main-menu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  margin-top: 1.5px;
+  right: 15rem;
+  width: 30%;
+}
+.main-menu ul li {
+  list-style-type: none;
+}
+.main-menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+}
+
+.logo {
+  margin-top: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+.logo-img {
+  width: 10rem;
+  height: 10rem;
+}
+.logo h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.part2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.part2 h2 {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: row;
+  font-size: 3rem;
+}
+.part2 p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 25%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.container-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: hsla(30, 24%, 89%, 0.7);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 25%;
+  height: 350px;
+}
+.container-card div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.container-card div p {
+  width: 100%;
+}
+.container-card-nature {
+  color: green;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 2.5rem;
+}
+.container-card-icon {
+  margin-top: 4rem;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+.footer {
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 2rem;
+}
+.footer-image {
+  width: 100%;
+  height: 40rem;
+  margin-top: 5px;
+  background-image: url("/img/banner_image_2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer-copy-write {
+  margin-top: 4rem;
+  font-size: 1.3rem;
+}/*# sourceMappingURL=main.css.map */
