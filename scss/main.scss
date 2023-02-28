@@ -8,6 +8,7 @@
     // min-width: 100%;
     min-height: 50rem;
     margin-bottom: 2rem;
+    filter: brightness(70%);
 }
 
 
@@ -18,16 +19,21 @@
     flex-direction: row;
     margin-top: 4rem;
     margin-bottom: 3px;
+
     &-navbar {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         width: 100%;
         position: relative;
+        font-size: 1.2rem;
 
         &-1 {
+            display: inline;
             list-style-type: none;
             position: absolute;
+            margin-bottom: 0.5rem;
+            padding: .5rem;
             bottom: 1px;
             left: 15rem;
 
@@ -38,10 +44,13 @@
         }
 
         &-2 {
+            display: inline;
+            padding: .5rem;
+            tex-items: center;
             list-style-type: none;
             text-decoration: none;
             position: absolute;
-
+            margin-bottom: 0.5rem;
             bottom: 1px;
             right: 15rem;
 
@@ -78,7 +87,7 @@
         flex-direction: row;
         justify-content: space-between;
         position: absolute;
-        margin-top: 1.5px;
+        margin-top: 1.5rem;
         right: 15rem;
         width: 30%;
 
@@ -111,6 +120,7 @@
     justify-content: space-between;
     align-content: center;
     align-items: center;
+    gap: 1.5rem;
 
     &-img {
         width: 10rem;
@@ -123,10 +133,22 @@
         font-size: 3rem;
         font-weight: bolder;
     }
+
+    &-button{
+       
+        width: 20rem;
+        height: 3.5rem;
+        border-radius: 30rem;
+        color: white;
+        background-color: rgb(10, 209, 10);
+        outline: none;
+        border: none;
+    }
     
    
 
 }
+
 
 
 .part2 {
@@ -160,16 +182,16 @@ width: 25%;
 }
 
 .container {
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
    
    
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    // height: 40rem;
+     height: 40rem;
     // border: 1px solid red;
 
    
