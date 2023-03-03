@@ -1,6 +1,4 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -14,6 +12,8 @@ body {
   font-weight: 300;
   font-family: "Oswald", sans-serif;
   background-color: lightgrey;
+  margin: 0;
+  padding: 0;
 }
 
 @font-face {
@@ -93,7 +93,7 @@ body {
 }
 @font-face {
   font-family: Lato-Italic;
-  src: url("../../fonts/Lato/Lato-Italic.ttf");
+  src: url("/fonts/Lato/Lato-Italic.ttf");
 }
 @font-face {
   font-family: Lato-Light;
@@ -149,21 +149,24 @@ body {
   }
 }
 .part1 {
-  background: url("/img/banner_image_1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 50rem;
-  margin-bottom: 2rem;
-  filter: brightness(70%);
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
-
-.top-menu {
+.part1 .image {
+  background-size: cover;
+  width: 100%;
+  height: 50rem;
+  filter: brightness(50%);
+}
+.part1 .top-menu {
   display: flex;
   flex-direction: row;
-  margin-top: 4rem;
-  margin-bottom: 3px;
+  position: absolute;
+  top: 20px;
+  width: 100%;
 }
-.top-menu-navbar {
+.part1 .top-menu-navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -171,7 +174,7 @@ body {
   position: relative;
   font-size: 1.2rem;
 }
-.top-menu-navbar-1 {
+.part1 .top-menu-navbar-1 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -182,14 +185,14 @@ body {
   bottom: 1px;
   left: 15rem;
 }
-.top-menu-navbar-1 a {
+.part1 .top-menu-navbar-1 a {
   text-decoration: none;
   color: white;
 }
-.top-menu-navbar-2 {
+.part1 .top-menu-navbar-2 {
   display: inline;
   padding: 0.5rem;
-  tex-items: center;
+  align-items: center;
   list-style-type: none;
   text-decoration: none;
   position: absolute;
@@ -197,19 +200,23 @@ body {
   bottom: 1px;
   right: 15rem;
 }
-.top-menu-navbar-2 a {
+.part1 .top-menu-navbar-2 a {
   text-decoration: none;
   color: white;
 }
-
-.main-menu {
+.part1 .main-menu {
+  top: 30px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  position: relative;
+  position: absolute;
   border-top: 1px solid white;
 }
-.main-menu p {
+.part1 .main-menu-title {
+  font-family: "Lato-Italic";
+  font-style: italic;
+  font-size: 1.5rem;
   display: flex;
   flex-direction: row;
   position: absolute;
@@ -218,7 +225,7 @@ body {
   left: 15rem;
   color: white;
 }
-.main-menu ul {
+.part1 .main-menu ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -227,17 +234,18 @@ body {
   right: 15rem;
   width: 30%;
 }
-.main-menu ul li {
+.part1 .main-menu ul li {
   list-style-type: none;
 }
-.main-menu ul li a {
+.part1 .main-menu ul li a {
   text-decoration: none;
   color: white;
   font-size: 1.4rem;
 }
-
-.logo {
+.part1 .logo {
+  position: absolute;
   margin-top: 20rem;
+  left: 40vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -245,17 +253,17 @@ body {
   align-items: center;
   gap: 1.5rem;
 }
-.logo-img {
+.part1 .logo-img {
   width: 10rem;
   height: 10rem;
 }
-.logo h1 {
+.part1 .logo h1 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: white;
   font-size: 3rem;
   font-weight: bolder;
 }
-.logo-button {
+.part1 .logo-button {
   width: 20rem;
   height: 3.5rem;
   border-radius: 30rem;
@@ -278,10 +286,10 @@ body {
   flex-direction: row;
   font-size: 3rem;
 }
-.part2 p {
+.part2-note {
   margin-top: 2rem;
   margin-bottom: 2rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-align: center;
   width: 25%;
 }
@@ -302,12 +310,14 @@ body {
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  padding: 2rem;
   background-color: hsla(30, 24%, 89%, 0.7);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 25%;
   height: 350px;
 }
 .container-card div {
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -320,10 +330,11 @@ body {
 }
 .container-card-nature {
   color: green;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Oswalt Bold";
   font-size: 2.5rem;
 }
 .container-card-icon {
+  padding: 1rem;
   margin-top: 4rem;
 }
 
