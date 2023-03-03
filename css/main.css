@@ -51,6 +51,103 @@ body {
   src: url("./fonts/Lato/Lato-Bold.ttf") format("truetype");
   font-weight: 600;
 }
+@font-face {
+  font-family: fa-brands;
+  src: url("../../fonts/font-awesome/webfonts/fa-brands-400.woff");
+}
+@font-face {
+  font-family: fa-regular;
+  src: url("../../fonts/font-awesome/webfonts/fa-regular-400.woff");
+}
+@font-face {
+  font-family: fa-solid;
+  src: url("../../fonts/font-awesome/webfonts/fa-solid-400.woff");
+}
+@font-face {
+  font-family: LatoReg;
+  src: url("../../fonts/Lato/Lato-Regular.ttf");
+}
+@font-face {
+  font-family: LatoBlack;
+  src: url("../../fonts/Lato/Lato-Black.ttf");
+}
+@font-face {
+  font-family: Lato-BlackItalic;
+  src: url("../../fonts/Lato/Lato-BlackItalic.ttf");
+}
+@font-face {
+  font-family: LatoBold;
+  src: url("../../fonts/Lato/Lato-Blod.ttf");
+}
+@font-face {
+  font-family: Lato-BoldItalic;
+  src: url("../../fonts/Lato/Lato-BoldItalic.ttf");
+}
+@font-face {
+  font-family: Lato-Hairline;
+  src: url("../../fonts/Lato/Lato-Hairline.ttf");
+}
+@font-face {
+  font-family: Lato-HairlineItalic;
+  src: url("../../fonts/Lato/Lato-HairlineItalic.ttf");
+}
+@font-face {
+  font-family: Lato-Italic;
+  src: url("../../fonts/Lato/Lato-Italic.ttf");
+}
+@font-face {
+  font-family: Lato-Light;
+  src: url("../../fonts/Lato/Lato-Light.ttf");
+}
+@font-face {
+  font-family: Lato-LightItalic;
+  src: url("../../fonts/Lato/Lato-LightItalic.ttf");
+}
+@font-face {
+  font-family: Oswald-Bold;
+  src: url("../../fonts/Oswald/Oswald-Bold.ttf");
+}
+@font-face {
+  font-family: Oswald-ExtraLight;
+  src: url("../../fonts/Oswald/Oswald-ExteralLight.ttf");
+}
+@font-face {
+  font-family: Oswald-Light;
+  src: url("../../fonts/Oswald/Oswald-Light.ttf");
+}
+@font-face {
+  font-family: Oswald-Medium;
+  src: url("../../fonts/Oswald/Oswald-Medium.ttf");
+}
+@font-face {
+  font-family: Oswald-Regular;
+  src: url("../../fonts/Oswald/Oswald-Regular.ttf");
+}
+@font-face {
+  font-family: Oswald-SemiBold;
+  src: url("../../fonts/Oswald/Oswald-SemiBold.ttf");
+}
+@media screen and (min-width: 576px) {
+  main {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  main {
+    width: 70%;
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  main {
+    width: 60%;
+  }
+}
 .part1 {
   background: url("/img/banner_image_1.jpg");
   background-repeat: no-repeat;
@@ -75,7 +172,9 @@ body {
   font-size: 1.2rem;
 }
 .top-menu-navbar-1 {
-  display: inline;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   list-style-type: none;
   position: absolute;
   margin-bottom: 0.5rem;
@@ -111,6 +210,8 @@ body {
   border-top: 1px solid white;
 }
 .main-menu p {
+  display: flex;
+  flex-direction: row;
   position: absolute;
   margin-top: 1.5rem;
   top: 0px;

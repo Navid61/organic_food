@@ -1,5 +1,7 @@
 @import "base/base";
 @import "base/typography";
+@import "layout/layout";
+@import "layout/media_queries";
 
 .part1 {
     background: url("/img/banner_image_1.jpg");
@@ -29,7 +31,9 @@
         font-size: 1.2rem;
 
         &-1 {
-            display: inline;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
             list-style-type: none;
             position: absolute;
             margin-bottom: 0.5rem;
@@ -73,6 +77,8 @@
     border-top: 1px solid white;
 
     p {
+        display: flex;
+        flex-direction: row;
         position: absolute;
         margin-top: 1.5rem;
         top: 0px;

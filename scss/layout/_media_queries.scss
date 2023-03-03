@@ -1,0 +1,38 @@
+$small-screen: 576px;
+$medium-screen: 768px;
+$large-screen: 992px;
+$extra-large-screen: 1200px;
+
+@media screen and (min-width: $small-screen) {
+  main {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+// @media screen and (min-width: $medium-screen) {
+//   header {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//   }
+// }
+
+@media screen and (min-width: $large-screen) {
+  main {
+    width: 70%;
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: $extra-large-screen) {
+ 
+  main {
+    width: 60%;
+  }
+ 
+}
