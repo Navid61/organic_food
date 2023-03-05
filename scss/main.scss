@@ -78,6 +78,14 @@ background-size: cover;
         justify-content: space-around;
         position: absolute;
         border-top: 1px solid white;
+
+        &-contactus {
+            display: block;
+           
+           
+           
+        }
+    
     
         &-title {
             font-family: 'Lato-Italic';
@@ -122,7 +130,8 @@ background-size: cover;
     
     
         }
-    
+
+        
     }
 
     .logo {
