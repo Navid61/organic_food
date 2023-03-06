@@ -76,6 +76,7 @@
         justify-content: space-around;
         position: absolute;
         border-top: 1px solid white;
+        
 
         &-contactus {
             display: block;
@@ -104,14 +105,21 @@
     
     
     
-        ul {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+        &-list {
+          
             position: absolute;
             margin-top: 1.5rem;
             right: 15rem;
             width: 30%;
+
+            ul {
+               
+                
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                gap: .5rem;
+            }
     
             li {
                 list-style-type: none;
@@ -288,9 +296,10 @@ width: 25%;
 // Media query for small devices like phones
 @media screen and (max-width: 480px) {
     .container {
-       
-      padding: 0 10px;
+             padding: 0 10px;
     }
+
+   
   }
   
   // Media query for medium devices like tablets
@@ -298,6 +307,9 @@ width: 25%;
     .container {
       max-width: 768px;
     }
+
+    
+ 
   }
   
   // Media query for large devices like laptops and desktops

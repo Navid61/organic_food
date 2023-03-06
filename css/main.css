@@ -232,19 +232,22 @@ body {
   width: 12rem;
   height: 3rem;
 }
-.part1 .main-menu ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.part1 .main-menu-list {
   position: absolute;
   margin-top: 1.5rem;
   right: 15rem;
   width: 30%;
 }
-.part1 .main-menu ul li {
+.part1 .main-menu-list ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.part1 .main-menu-list li {
   list-style-type: none;
 }
-.part1 .main-menu ul li a {
+.part1 .main-menu-list li a {
   text-decoration: none;
   color: white;
   font-size: 1.4rem;
