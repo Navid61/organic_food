@@ -8,9 +8,7 @@
    flex-direction: column;
     position: relative;
     .image{
-     
-background-size: cover;
-        width: 100%;
+        object-fit: cover;
         height: 50rem;
         filter: brightness(50%);
     }
